@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.hibernate.Entity.HdfcBank" table="HdfcBank">
+        <id name="pid">
+        <generator class="increment"/>
+       </id>
+        <property name="customer" column="customer"/>
+        <property name="IFSCcode" column="IFSCcode"/>
+         <property name="Amount" column="Amount"/>
+        <property name="AccountNum" column="AccountNum"/>
+    
+    </class>
+      
+</hibernate-mapping>

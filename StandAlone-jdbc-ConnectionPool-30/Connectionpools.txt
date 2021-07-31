@@ -1,0 +1,12 @@
+
+for hikari pool
+
+// https://mvnrepository.com/artifact/org.hibernate/hibernate-hikaricp
+implementation group: 'org.hibernate', name: 'hibernate-hikaricp', version: '5.4.10.Final'
+
+
+for c3p0 pool
+// https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0
+implementation group: 'org.hibernate', name: 'hibernate-c3p0', version: '5.4.31.Final'
+
+for 

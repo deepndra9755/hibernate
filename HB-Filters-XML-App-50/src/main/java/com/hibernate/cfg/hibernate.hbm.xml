@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+  PUBLIC "-//Hibernate?Hibernate Mapping DTD//EN"
+  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+  <hibernate-mapping>
+<class name="com.hibernate.Entity.Civil" table="civil">
+
+<id name="id">
+<generator class="identity"/>
+</id>
+<property name="name"/>
+<property name="address"></property>
+
+<property name="city"></property>
+
+<property name="DEPARTMENT"></property>
+
+<property name="depIDl"></property>
+
+<property name="sallary"></property>
+
+<property name="job"></property>
+<filter name="FILTR_DEFID" condition="address not in(:param1)"></filter>
+
+</class>
+<filter-def name="FILTR_DEFID">
+<filter-param name="param1" type="string"/>
+</filter-def>
+
+</hibernate-mapping>

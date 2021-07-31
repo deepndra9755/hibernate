@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping
+  PUBLIC "-//Hibernate?Hibernate Mapping DTD//EN"
+  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+  
+  <hibernate-mapping package="com.hibernate.Entity">
+<class name="BasicInfo" table="Person_Inheritance_dem" discriminator-value="basic">
+<id name="id">
+<generator class="increment"/>
+</id>
+<discriminator column="DESCRI" type="string"/>
+        <property name="name" type="string"/>
+	    <property name="address" type="string"/>
+		<property name="mobile"/>
+		<subclass name="PersonDD" discriminator-value="person">
+	
+	 <property name="Enroll"/>
+   <property name="roll"/>
+    <property name="branch"/>
+
+		</subclass>
+
+</class>
+
+</hibernate-mapping>

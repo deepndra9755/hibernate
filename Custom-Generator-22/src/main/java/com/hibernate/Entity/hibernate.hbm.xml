@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+<class name="com.hibernate.Entity.CarProduction">
+
+<id name="id" type="int">
+<generator class="com.custom.gen.MyGenerator">
+</generator>
+</id> 
+
+<property name="gair" type="int"/>
+<property name="price" type="float"/>
+<property name="Cname" type="string" length="14"/>
+<property name="Ctype" type="string" length="14"/>
+<property name="average" type="string" length="14"/>
+<property name="company" type="string" length="14"/>
+</class>
+
+</hibernate-mapping>

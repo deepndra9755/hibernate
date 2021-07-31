@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+<class name="com.hibernate.Entity.CarProduction">
+<!-- <id name="id" column="id" type="int"> -->
+<!-- <generator class="hilo">  this is for hilo genrator-->
+
+<!-- <id name="id" column="id" type="int"> -->
+<!-- <generator class="increment"> -->
+<!-- </generator> -->
+<!-- </id> this is increment generator -->
+
+
+<!-- <id name="id" column="id" type="int"> -->
+<!-- <generator class="assiment"> -->
+<!-- </generator> -->
+<!-- </id>  for assiment generator-->
+
+<!-- <id name="id" column="id" type="int"> -->
+<!-- <generator class="identity"> -->
+<!-- </generator> -->
+<!-- </id>  for identity generator-->
+
+<!-- <id name="id" column="id" type="int"> -->
+<!-- <generator class="native"> -->
+<!-- </generator> -->
+<!-- </id> for native generator -->
+
+<id name="id" column="id" type="string">
+<generator class="uuid">
+</generator>
+</id> 
+
+<!-- <id name="id" column="id" type="string"> -->
+<!-- <generator class="guid"> -->
+<!-- </generator> -->
+<!-- </id> for guid-->
+
+<property name="gair" type="int"/>
+<property name="price" type="float"/>
+<property name="Cname" type="string" length="14"/>
+<property name="Ctype" type="string" length="14"/>
+<property name="average" type="string" length="14"/>
+<property name="company" type="string" length="14"/>
+</class>
+
+</hibernate-mapping>

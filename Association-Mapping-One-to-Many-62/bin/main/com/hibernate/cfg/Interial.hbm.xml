@@ -7,9 +7,8 @@
  
 
   <class name="com.hibernate.Entity.Interial">
-  <id name="ids">
-  <generator class="increment"/>
-  </id>
+  <id name="ids"/>
+ 
   <property name="PowerCunsumtion"/>
   <property name="color" type="string" length="12"></property>
   

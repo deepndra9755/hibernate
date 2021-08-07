@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping>
+<class name="com.hibernate.Entity.CarProduction">
+
+<composite-id class="com.hibernate.Entity.CompositePNL" name="idd">
+<key-property name="price"/>
+<key-property name="average" length="23"/>
+
+</composite-id>
+<property name="gair" type="int"/>
+<property name="Cname" type="string" length="14"/>
+<property name="Ctype" type="string" length="14"/>
+
+<property name="company" type="string" length="14"/>
+</class>
+
+</hibernate-mapping>

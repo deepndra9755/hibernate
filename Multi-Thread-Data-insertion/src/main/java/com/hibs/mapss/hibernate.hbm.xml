@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+	<!DOCTYPE hibernate-mapping PUBLIC
+			"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+			"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+	<hibernate-mapping>
+	<class name="com.hibs.Entity.ProductOn">
+	<id name="num" type="int" length="6">
+	<generator class="identity"/>
+	</id>
+	<property name="name" length="24" type="string"/>
+	<property name="code" length="7" unique="true" type="int"/>
+		<property name="company" type="string" length="20"/>
+			<property name="type" type="string"/>
+		
+	
+	
+	</class>
+	
+	
+	</hibernate-mapping>		
